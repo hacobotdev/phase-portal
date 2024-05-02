@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  background-color: #1e1f20;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: rgb(240, 240, 240);
+}
+
+.App-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: #f0f0f0;
+  background-color: #3c6d62;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 3px 3px;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 #1e1e1e, 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+.App-spacer {
+  height: 50px;
+  width: 100%;
+}
+
+.App-button {
+  color: #f0f0f0;
+  background-color: #3c6d62;
+  width: 90%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 8px 16px 0 #1e1e1e, 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+.App-button:active {     
+  background-color: #588379;    
+  border: 1px solid #4c5a7a;
+}
+.btnDisabled {
+  background-color: #333333;    
+  color: #535353;
+}
+.btnDisabled:active {
+  background-color: #333333;
+}
+.circle {
+  position: fixed;
+  margin-top: 0px;
+  top: calc(100% - 80px);
+  left: calc(100% - 80px);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+.App-textfield {
+  color: #292929;
+  background-color: #ffffff;
+  width: 90%;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 #192238, 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+.App-textfield-label {
+  color: #f0f0f0;
+  width: 90%;
+  height: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0px;
+  border: none;
+  font-size: 14px;
+  text-align: left;
+}
