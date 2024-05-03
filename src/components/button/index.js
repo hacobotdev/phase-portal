@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import '../../App.css';
+import React from "react";
 
 const Boton = ({
     title,
     onAction,
     disabled,
     loading,
-    style,
+    type,
     ...props
   }) => {
 
@@ -18,7 +17,7 @@ const Boton = ({
 
   return (
     <button
-      className={`App-button${ style ? (' '+ style) : ''}${ disabled ? ' btnDisabled' : ''}`}
+      className={`App-button${ type ? (' '+ type) : ''}${ disabled ? ' btnDisabled' : ''}`}
       onClick={handleOnClick}
     >{title}</button>
   );

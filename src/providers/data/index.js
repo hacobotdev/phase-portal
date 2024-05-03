@@ -10,6 +10,7 @@ export const DataProvider = (props) => {
   /** Hook de prueba para ver los cambios de "data" en consola del explorador */
   useEffect(() => {
     localStorage.setItem("data", JSON.stringify(data));
+    // eslint-disable-next-line
   }, [data])
 
   const getUsuario = () => {
@@ -24,17 +25,15 @@ export const DataProvider = (props) => {
   }
 
   const getPartidas = () => {
-    return data?.partidas || [];
+    return data?.partidas?.reverse() || [];
   }
 
   const savePartida = (partida) => {
     let newObj = JSON.parse(JSON.stringify(data));
     newObj.partidas = getPartidas();
-    let new_id = 1;
-    newObj.partidas.forEach(obj => { if(obj.id >= new_id) new_id = obj.id + 1; });
-    newObj.partidas.push({id: new_id, ...partida});
+    newObj.partidas.push(partida);
     setData(newObj);
-    return newObj.partidas;
+    return newObj.partidas.reverse();
   }
 
   const deletePartida = (partida_uuid) => {

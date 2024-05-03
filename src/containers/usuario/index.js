@@ -15,6 +15,7 @@ const Usuario = ({
       let user = getUsuario();
       setUsuario(user?.nombre || '')
     }
+    // eslint-disable-next-line
   }, [usuario]);
 
   const handleSaveUserClick = () => {
